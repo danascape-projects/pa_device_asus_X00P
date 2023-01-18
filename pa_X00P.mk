@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,18 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Paranoid Android stuff.
+$(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Device identifiers.
-PRODUCT_NAME := lineage_X00P
+PRODUCT_NAME := pa_X00P
 PRODUCT_DEVICE := X00P
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X00PD
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
