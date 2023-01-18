@@ -183,9 +183,6 @@ BOARD_USES_QCOM_HARDWARE := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Sepolicy - Common
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-
 # Sepolicy - X00P
 include device/asus/X00P-sepolicy/X00P-sepolicy.mk
 
